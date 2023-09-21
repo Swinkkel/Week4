@@ -11,7 +11,10 @@ async function getShows() {
   const showsPromise = await fetch(url);
   const showsJSON = await showsPromise.json();
 
-  console.log(showsJSON);
+  const elements = document.getElementsByClassName("show-container");
+  if (elements.length > 0) {
+    elements[0].innerHTML = "";
+  }
 
   showsJSON.forEach((element) => {
     let div1 = document.createElement("div");
@@ -38,6 +41,6 @@ async function getShows() {
 
     div1.appendChild(div2);
 
-    document.body.appendChild(div1);
+    elements[0].appendChild(div1);
   });
 }
