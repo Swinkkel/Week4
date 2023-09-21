@@ -18,10 +18,6 @@ body {
     box-shadow: 10px 5px 5px grey;
   }
 
-  .show-data > h1 {
-    text-align: center;
-  }
-
   .show-data > img {
     display: block;
   }
@@ -29,7 +25,11 @@ body {
   .show-info {
     width: 100%;
   }
-  
+
+  .show-info > h1 {
+    text-align: center;
+  }
+
   @media (min-width: 801px) {
     .show-data {
       display: flex;
