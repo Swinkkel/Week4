@@ -3,19 +3,25 @@ body {
     font-family: 'Roboto', sans-serif;
   }
   
+  .show-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .show-data {
     width: 100%;
     background-color: #cfd8dc;
-    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 6px;
     box-shadow: 10px 5px 5px grey;
   }
-  
-  h1 {
+
+  .show-data > h1 {
     text-align: center;
   }
-  
+
   .show-data > img {
     display: block;
   }
@@ -24,7 +30,7 @@ body {
     width: 100%;
   }
   
-  @media (min-width: 800px) {
+  @media (min-width: 801px) {
     .show-data {
       display: flex;
     }
